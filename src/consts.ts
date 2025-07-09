@@ -1,60 +1,32 @@
+// src/consts.ts
 import type { IconMap, SocialLink, Site } from '@/types'
 
 export const SITE: Site = {
-  title: 'Cojocaru David',
+  title: 'Nadia Vespalec',
   description:
-    "I'm a Junior Full Stack Developer with a passion for creating web applications. I have experience in both front-end and back-end development, and I'm always eager to learn new technologies and improve my skills. I enjoy collaborating with teams and contributing to projects that make a difference.",
-  href: 'https://cojocarudavid.me',
-  author: 'Cojocaru David',
+    "I'm a Full Stack Developer with a passion for creating clean and functional websites that operate on dependable code and sleek user interfaces. With a strong background in Front End Development, I'm always eager to learn new technologies and frameworks to create optimized websites with beautiful user interfaces. I enjoy collaborating with teams and contributing to ground-breaking projects.",
+  href: 'https://nadiavespalec.com',
+  author: 'Nadia Vespalec',
   locale: 'en-US',
-  location: 'Romania',
+  location: 'Vancouver',
 }
 
 export const NAV_LINKS: SocialLink[] = [
-  {
-    href: '/',
-    label: 'home',
-  },
-  {
-    href: '/projects',
-    label: 'projects',
-  },
-  {
-    href: '/blog',
-    label: 'blog',
-  },
+  { href: '/', label: 'home' },
+  { href: '/projects', label: 'projects' },
+  { href: '/blog', label: 'blog' },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  {
-    href: 'https://github.com/cojocaru-david?ref=personal-website',
-    label: 'GitHub',
-  },
-  {
-    href: 'mailto:contact@cojocarudavid.me',
-    label: 'Email',
-  },
-  {
-    href: '+40 764 132 266',
-    label: 'Phone',
-  },
-  {
-    href: 'https://www.instagram.com/david._.cojo?ref=personal-website',
-    label: 'Instagram',
-  },
-  {
-    href: '/rss.xml',
-    label: 'RSS',
-  },
+  { href: 'https://github.com/nai-ada', label: 'GitHub' },
+  { href: 'mailto:nadiavespalec00@gmail.com', label: 'Email' },
 ]
 
 export const ICON_MAP: IconMap = {
-  Website: 'lucide:globe',
   GitHub: 'lucide:github',
-  Instagram: 'lucide:instagram',
-  Phone: 'lucide:phone',
   Email: 'lucide:mail',
-  RSS: 'lucide:rss',
+  LinkedIn: '',
+  Resume: '',
 }
 
 export interface Category {
@@ -66,11 +38,10 @@ export type Technologies = {
   'Web Development': Category[]
   'Development Tools': Category[]
   'Hosting and Cloud Services': Category[]
-  'Operating Systems': Category[]
   'Other Programming Languages and Technologies': Category[]
   'Web Servers': Category[]
   Databases: Category[]
-  'Other Software': Category[]
+  'Design Tools': Category[]
 }
 
 export const technologies: Technologies = {
@@ -81,37 +52,31 @@ export const technologies: Technologies = {
     { text: 'PHP', logo: 'mdi:language-php' },
     { text: 'Astro', logo: 'simple-icons:astro' },
     { text: 'Tailwind CSS', logo: 'mdi:tailwind' },
+    { text: 'Typescript', logo: 'mdi:typescript' },
+    { text: 'SASS', logo: 'mdi:sass' },
+    { text: 'WordPress', logo: 'mdi:wordpress' },
   ],
   'Development Tools': [
     { text: 'Visual Studio Code', logo: 'mdi:visual-studio-code' },
     { text: 'Git', logo: 'mdi:git' },
   ],
-  'Hosting and Cloud Services': [
-    { text: 'DigitalOcean', logo: 'mdi:digital-ocean' },
-    { text: 'Cloudflare', logo: 'cib:cloudflare' },
-    { text: 'Netlify', logo: 'cib:netlify' },
+  'Design Tools': [
+    { text: 'Figma', logo: 'mdi:figma' },
   ],
-  'Operating Systems': [
-    { text: 'Windows', logo: 'mdi:windows' },
-    { text: 'Ubuntu', logo: 'mdi:ubuntu' },
+  'Hosting and Cloud Services': [
+    { text: 'Netlify', logo: 'cib:netlify' },
   ],
   'Other Programming Languages and Technologies': [
     { text: 'Lua', logo: 'mdi:language-lua' },
-    { text: 'Golang', logo: 'mdi:language-go' },
     { text: 'Node.js', logo: 'mdi:nodejs' },
+    { text: 'Express.js', logo: 'mdi:expressjs' },
   ],
   'Web Servers': [
     { text: 'Apache', logo: 'cib:apache' },
-    { text: 'Nginx', logo: 'cib:nginx' },
   ],
   Databases: [
     { text: 'MySQL', logo: 'cib:mysql' },
-    { text: 'MongoDB', logo: 'cib:mongodb' },
-  ],
-  'Other Software': [
-    { text: 'Discord', logo: 'mdi:discord' },
-    { text: 'Spotify', logo: 'mdi:spotify' },
-    { text: 'Visual Studio', logo: 'mdi:visual-studio' },
-    { text: 'Brave', logo: 'cib:brave' },
+    { text: 'Supabase', logo: 'cib:supabase' },
+    { text: 'PostgreSQL', logo: 'cib:postgresql' },
   ],
 }
