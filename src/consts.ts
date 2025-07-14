@@ -1,4 +1,3 @@
-// src/consts.ts
 import type { IconMap, SocialLink, Site } from '@/types'
 
 export const SITE: Site = {
@@ -8,7 +7,7 @@ export const SITE: Site = {
   href: 'https://nadiavespalec.com',
   author: 'Nadia Vespalec',
   locale: 'en-US',
-  location: 'Vancouver',
+  location: '',
 }
 
 export const NAV_LINKS: SocialLink[] = [
@@ -20,13 +19,15 @@ export const NAV_LINKS: SocialLink[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   { href: 'https://github.com/nai-ada', label: 'GitHub' },
   { href: 'mailto:nadiavespalec00@gmail.com', label: 'Email' },
+  { href: 'https://www.linkedin.com/in/nadiavespalec', label: 'LinkedIn' },
+  { href: '', label: 'Resume' },
 ]
 
-export const ICON_MAP: IconMap = {
+export const ICON_MAP = {
   GitHub: 'lucide:github',
   Email: 'lucide:mail',
-  LinkedIn: '',
-  Resume: '',
+  LinkedIn: 'lucide:linkedin',
+  Resume: 'lucide:file-text',
 }
 
 export interface Category {

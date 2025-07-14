@@ -1,4 +1,3 @@
-// src/components/Skills.tsx
 import { useEffect } from 'react'
 import { technologies, type Technologies, type Category } from '@/consts'
 import { InfiniteScroll } from '../ui/infinite-scroll'
